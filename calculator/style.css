@@ -1,0 +1,5 @@
+form { display: table }
+p { display: table-row }
+label { display: table-cell }
+input { display: table-cell }
+input {margin-top: 0.1rem, 0.1rem;}

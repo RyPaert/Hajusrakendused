@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Calculator</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>calc</h2>
+    <form>
+        <ul style="list-style: none;">
+            <li><label><input type="radio" name="shape" id="rect_inputs">Rectangle</label></li>
+            <li><label><input type="radio" name="shape" id="square_inputs">Square</label></li>
+            <li><label><input type="radio" name="shape" id="circle_inputs">Circle</label></li>
+        </ul>
+
+    <div id="rect_inputs" class="shape_inputs" style="display: block;">
+        <label for="rect_length">Pikkus:</label>
+        <input id="rect_length" type="number" min="0" name="rect_length">
+        <label for="rect_width">Laius:</label>
+        <input id="rect_width" type="number" min="0" name="rect_width">
+    </div>
+
+    <!-- <div id="rect_inputs" class="shape_inputs" style="display: block;">
+        <label for="rect_length">Pikkus:</label>
+        <input id="rect_length" type="number" name="rect_length">
+        <label for="rect_width">Laius:</label>
+        <input id="rect_width" type="number" name="rect_width">
+    </div>
+
+    <div id="circle_inputs" class="shape_inputs" style="display: block;">
+        <label for="circle_radius">Pikkus:</label>
+        <input id="circle_radius" type="number" name="circle_radius">
+    </div> -->
+    <p>
+        <input id="calc_button" type="button" value="Arvuta">
+    </p>
+    </form>
+    <canvas id="result_canvas" width="640" height="">
+
+    </canvas>
+</body>
+</html>
