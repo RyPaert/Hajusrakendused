@@ -11,6 +11,8 @@ const students = [
 ]
 
 app.get('/students', (req, res) => {
+
+    
     res.send(students)
 })
 
@@ -24,6 +26,7 @@ app.get("/", (req, res) => {
     }
     result +="</ul>"
     result +="</body></html>"
+    res.send(result)
 })
 
 app.get('/students/:id', (req, res) => {
